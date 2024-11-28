@@ -124,3 +124,5 @@ async function main() {
 
     renderPlayer(radioNumbers, audioTagStrings);
 }
+
+main();
