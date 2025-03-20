@@ -21,7 +21,7 @@ async function fetchRadioUrls() {
         // 指定のURL形式に一致するものをフィルタリング
         const radioUrls = links
             .map(link => link.href) // 各リンクのhrefを取得
-            .filter(href => href.startsWith('https://fc.vspo.jp/ja/gallery/radio')) // 特定のURL形式をチェック
+            .filter(href => href.startsWith('https://fc.vspo.jp/gallery/radio')) // 特定のURL形式をチェック
             .filter((href, index, self) => self.indexOf(href) === index); // 重複を削除
 
         return radioUrls.reverse();
